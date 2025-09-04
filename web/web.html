@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeyam — Herbal Face Wash Powder</title>
+  <meta name="description" content="Jeyam is a natural herbal face wash powder that gently cleanses, nourishes, and refreshes skin without chemicals." />
+  <meta name="keywords" content="herbal face wash, skincare, natural beauty, Jeyam" />
+  <meta property="og:title" content="Jeyam — Herbal Face Wash Powder" />
+  <meta property="og:description" content="Gentle herbal care for glowing skin." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="jeyam-hero.jpg" />
+  <meta name="theme-color" content="#14532d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f0fdf4;
+      --card: #ffffff;
+      --muted: #4b5563;
+      --text: #1f2937;
+      --primary: #22c55e; /* herbal green */
+      --accent: #16a34a;  /* darker green */
+      --radius: 16px;
+      --shadow: 0 6px 20px rgba(0,0,0,.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    header { background: #fff; box-shadow: var(--shadow); position: sticky; top: 0; z-index: 50; }
+    .nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+    .brand { font-weight: 800; font-size: 20px; color: var(--accent); }
+    .nav-links { display: flex; gap: 20px; }
+    .cta { background: var(--primary); color: white; padding: 10px 16px; border-radius: 8px; border: none; font-weight: 700; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; padding: 40px 0; }
+    h1 { font-size: clamp(28px, 5vw, 54px); margin: 0 0 14px; }
+    .lead { font-size: 18px; margin-bottom: 20px; color: var(--muted); }
+    .btn-primary { background: var(--primary); color: #fff; padding: 14px 20px; border: none; border-radius: 8px; font-weight: 700; }
+    .product-card { border-radius: var(--radius); background: var(--card); box-shadow: var(--shadow); overflow: hidden; position: relative; }
+    .product-card img { width: 100%; height: auto; display: block; }
+    .price-tag { position: absolute; top: 12px; right: 12px; background: var(--accent); color: #fff; padding: 6px 10px; border-radius: 6px; font-weight: 700; }
+    .section { padding: 50px 0; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; margin-top: 24px; }
+    .feature { background: #fff; border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
+    .gallery img, .gallery video { width: 100%; border-radius: var(--radius); }
+    .pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .plan { background: #fff; border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
+    .plan h3 { margin: 0 0 8px; }
+    .price { font-size: 28px; font-weight: 800; margin: 8px 0; color: var(--accent); }
+    footer { text-align: center; padding: 24px; background: #fff; color: var(--muted); margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Jeyam</div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <button class="cta" onclick="scrollToId('pricing')">Buy Now</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <h1>Meet Jeyam — herbal face wash powder</h1>
+        <p class="lead">A natural face wash powder made from hand‑picked herbs. Cleanses, nourishes, and leaves your skin fresh without chemicals.</p>
+        <button class="btn-primary" onclick="scrollToId('pricing')">Add to Cart — ₹299</button>
+      </div>
+      <div class="product-card">
+        <img src="jeyam-hero.jpeg" alt="Jeyam herbal face wash powder packaging" />
+        <div class="price-tag">₹299</div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <h2>Why you'll love it</h2>
+      <div class="features">
+        <div class="feature">🌿 <h3>100% Herbal</h3><p>Made from natural herbs with no harsh chemicals.</p></div>
+        <div class="feature">💧 <h3>Gentle Cleanse</h3><p>Removes dirt and excess oil without drying your skin.</p></div>
+        <div class="feature">🌸 <h3>Glowing Skin</h3><p>Regular use helps maintain clear, radiant skin.</p></div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <h2>See Jeyam in action</h2>
+      <div class="gallery">
+        <img src="jeyam-use-1.jpg" alt="Person using Jeyam herbal face wash" />
+        <video controls poster="jeyam-video-poster.jpg">
+          <source src="jeyam-demo.mp4" type="video/mp4" />
+        </video>
+        <img src="jeyam-closeup.jpg" alt="Close up of Jeyam herbal powder" />
+        <img src="jeyam-packaging.jpg" alt="Jeyam packaging" />
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+      <h2>Simple pricing</h2>
+      <div class="pricing">
+        <div class="plan">
+          <h3>Single Pack</h3>
+          <p class="price">₹199</p>
+          <p>100g Jeyam Herbal Face Wash Powder</p>
+          <button class="btn-primary" onclick="addToCart('Single Pack',299)">Buy Now</button>
+        </div>
+        <div class="plan">
+          <h3>Family Pack</h3>
+          <p class="price">₹499</p>
+          <p>3 × 100g packs · Save ₹100</p>
+          <button class="btn-primary" onclick="addToCart('Family Pack',799)">Buy Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Jeyam Herbal Care. All rights reserved.
+  </footer>
+
+  <script>
+    const cart = { items: [], total: 0 };
+
+    function scrollToId(id) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function addToCart(plan, price) {
+      cart.items.push({ plan, price });
+      cart.total = cart.items.reduce((s, i) => s + i.price, 0);
+      alert(`${plan} added to cart. Total: ₹${cart.total}`);
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
